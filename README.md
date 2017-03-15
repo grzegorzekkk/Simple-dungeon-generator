@@ -8,9 +8,9 @@ Another small algorithm for your roguelike game level generation.
 
 int main()
 {
-	Dungeon x(64, 64, 5);
-	x.gen(60);
-	x.show();
+	Dungeon x(64, 64, 5); // (width, height, offset)
+	x.gen(60); // Number of rooms to generate
+	x.show();  // print map to stdout
 
 	std::cout << "Enter to end... ";
 	std::cin.get();
